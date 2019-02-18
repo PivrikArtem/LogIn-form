@@ -1,0 +1,12 @@
+html {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap {
+  width: 500px;
+  height: 400px;
+  max-width: 100%;
+  border: 1px solid red;
+}
