@@ -3,10 +3,47 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #d3cccc;
 }
 .wrap {
-  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
   height: 400px;
   max-width: 100%;
-  border: 1px solid red;
+  box-shadow: 0px 0px 10px 2px gray;
+  background: white;
+}
+.wrap .information {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 200px;
+}
+.wrap .information .img-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.wrap .information .img-block img {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+}
+.wrap .information .img-block button {
+  width: 80px;
+}
+.wrap .information .personal-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.wrap .information .personal-data input {
+  margin: 5px 0px;
+}
+.wrap button {
+  width: 100px;
 }
