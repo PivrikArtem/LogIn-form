@@ -11,25 +11,31 @@
 
 <body>
     <div class="wrap">
-        
-            <h3>Create profile</h3>
+
+        <h3>Create profile</h3>
         <div class="information">
-                <div class="img-block">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3cl0_YtQx2v9F_UUJzR9HEdOqJu7ipLMA8MWTjr9tmqI6Y3Hq' />
-                        <button>add</button>
-                    </div>
-                    <div class="personal-data">
-                        <label name="name">Name</label>
-                        <input type="text" placeholder="Alex" />
-                        <label name="surname">Surname</label>
-                        <input type="text" placeholder="Smit" />
-                        <label name="phone-number">Phone</label>
-                        <input type="tel" placeholder="+375295656567" />
-                       
-                    </div>
+            <div class="img-block">
+                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3cl0_YtQx2v9F_UUJzR9HEdOqJu7ipLMA8MWTjr9tmqI6Y3Hq' />
+                <button>add</button>
+            </div>
+            <form action="#" class="personal-data">
+                <label name="name">Name</label>
+
+                <input  type="text" name="first_name" value="" maxlength="30"
+                pattern="[A-Z]{1}[a-z]+" placeholder="Alex" required />
+
+                <label name="surname">Surname</label>
+                <input type="text" name="last_name" value="" maxlength="30" 
+                pattern="[A-Z]{1}[a-z]+" placeholder="Smit" required />
+                <label name="phone-number" for="phone">Phone</label>
+                <input type="tel" name="phone" placeholder="+37529-2591893"
+                maxlength="14" pattern="\+\d{5}-\d{7}"
+                required />
+                <button type="submit">LogIn</button>
+            </form>
         </div>
-       
-        <button>LogIn</button>
+
+
     </div>
 </body>
 

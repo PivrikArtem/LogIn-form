@@ -7,7 +7,7 @@ html {
 }
 .wrap {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   width: 600px;
@@ -15,6 +15,9 @@ html {
   max-width: 100%;
   box-shadow: 0px 0px 10px 2px gray;
   background: white;
+}
+.wrap h3 {
+  padding: 30px 0px 20px 0px;
 }
 .wrap .information {
   display: flex;
@@ -43,6 +46,14 @@ html {
 }
 .wrap .information .personal-data input {
   margin: 5px 0px;
+}
+.wrap .information .personal-data input:required:invalid {
+  border: 1px solid red;
+}
+.wrap .information .personal-data button {
+  position: relative;
+  top: 70px;
+  right: 80px;
 }
 .wrap button {
   width: 100px;
