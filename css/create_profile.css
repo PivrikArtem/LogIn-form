@@ -46,6 +46,7 @@ html {
 }
 .wrap .information .personal-data input {
   margin: 5px 0px;
+  box-shadow: 0px 0px 10px 2px gray;
 }
 .wrap .information .personal-data input:required:invalid {
   border: 1px solid red;
@@ -54,7 +55,17 @@ html {
   position: relative;
   top: 70px;
   right: 80px;
+  background: #d3cccc;
+  outline: none;
+  color: white;
 }
 .wrap button {
   width: 100px;
+  height: 25px;
+  background: #d3cccc;
+  outline: none;
+  border-radius: 5px;
+  font-size: 17px;
+  color: white;
 }
+/*# sourceMappingURL=create_profile.css.map */
